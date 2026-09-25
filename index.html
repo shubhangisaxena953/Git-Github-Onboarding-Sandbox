@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git/GitHub Onboarding Sandbox</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <p class="eyebrow">Git/GitHub Onboarding Sandbox</p>
+      <h1>My tasks</h1>
+      <p class="intro">A small place to practice making changes.</p>
+    </header>
+
+    <form id="task-form" class="task-form">
+      <label for="task-input">New task</label>
+      <div class="input-row">
+        <input id="task-input" name="task" type="text" placeholder="Try a Git command" autocomplete="off" required>
+        <button type="submit">Add task</button>
+      </div>
+    </form>
+
+    <section aria-labelledby="task-list-heading">
+      <h2 id="task-list-heading">Task list</h2>
+      <ul id="task-list" class="task-list"></ul>
+      <p id="empty-message" class="empty-message">No tasks yet. Add one to get started.</p>
+    </section>
+  </main>
+
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
