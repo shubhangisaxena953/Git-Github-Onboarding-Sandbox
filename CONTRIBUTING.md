@@ -55,7 +55,7 @@ Ask Git which files changed:
 git status
 ```
 
-Open `index.html` in a browser to test the app when your change affects the app. For a contributor file, check that the filename and text are correct.
+Open `todo/index.html` in a browser to test the app when your change affects the app. For a contributor file, check that the filename and text are correct.
 
 ### 6. Commit your change
 

@@ -16,7 +16,9 @@ Screenshot placeholder: a real app screenshot will be added here later.
 	cd Git-Github-Onboarding-Sandbox
 	```
 
-3. Run the app by opening `index.html` directly in your browser.
+3. Run the app you want to try:
+	- [To-do](todo/index.html)
+	- [Notes](notes/index.html)
 4. Create a branch before making changes:
 
 	```text

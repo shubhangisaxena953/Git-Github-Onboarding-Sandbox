@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <p class="eyebrow">Git/GitHub Onboarding Sandbox</p>
+      <h1>Notes</h1>
+      <p class="intro">Keep a short list of things worth remembering.</p>
+    </header>
+
+    <form id="note-form" class="note-form">
+      <label for="note-title">Title</label>
+      <input id="note-title" name="title" type="text" required>
+      <label for="note-text">Note</label>
+      <textarea id="note-text" name="text" rows="4" required></textarea>
+      <button type="submit">Add note</button>
+    </form>
+
+    <section aria-labelledby="note-list-heading">
+      <h2 id="note-list-heading">All notes</h2>
+      <ul id="note-list" class="note-list"></ul>
+      <p id="empty-message" class="empty-message">No notes yet. Add one to get started.</p>
+    </section>
+  </main>
+
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
