@@ -16,10 +16,10 @@ Screenshot placeholder: a real app screenshot will be added here later.
 	cd Git-Github-Onboarding-Sandbox
 	```
 
-3. Run the app you want to try:
-	- [To-do](todo/index.html)
-	- [Notes](notes/index.html)
-	- [Expenses](expenses/index.html)
+3. Run the app you want to try by opening its file in your browser after cloning:
+	- `todo/index.html`
+	- `notes/index.html`
+	- `expenses/index.html`
 4. Create a branch before making changes:
 
 	```text
@@ -27,6 +27,12 @@ Screenshot placeholder: a real app screenshot will be added here later.
 	```
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full contribution flow.
+
+## Structure
+
+- `todo/`, `notes/`, `expenses/` — the three mini-apps
+- `exercises/` — Git practice exercises (see the issue list)
+- `contributors/` — where each contributor adds their intro file
 
 ## Tech stack
 
