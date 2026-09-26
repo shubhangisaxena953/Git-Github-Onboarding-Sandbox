@@ -19,6 +19,7 @@ Screenshot placeholder: a real app screenshot will be added here later.
 3. Run the app you want to try:
 	- [To-do](todo/index.html)
 	- [Notes](notes/index.html)
+	- [Expenses](expenses/index.html)
 4. Create a branch before making changes:
 
 	```text
