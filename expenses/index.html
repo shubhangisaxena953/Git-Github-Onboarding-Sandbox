@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expenses</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <p class="eyebrow">Git/GitHub Onboarding Sandbox</p>
+      <h1>Expenses</h1>
+      <p class="intro">Keep a simple record of what you spend.</p>
+    </header>
+
+    <form id="expense-form" class="expense-form">
+      <label for="expense-description">Description</label>
+      <input id="expense-description" name="description" type="text" required>
+      <label for="expense-amount">Amount</label>
+      <input id="expense-amount" name="amount" type="number" min="0.01" step="0.01" required>
+      <button type="submit">Add expense</button>
+    </form>
+
+    <section aria-labelledby="expense-list-heading">
+      <div class="summary">
+        <h2 id="expense-list-heading">All expenses</h2>
+        <p>Total: <strong id="expense-total">₹0.00</strong></p>
+      </div>
+      <ul id="expense-list" class="expense-list"></ul>
+      <p id="empty-message" class="empty-message">No expenses yet. Add one to get started.</p>
+    </section>
+  </main>
+
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

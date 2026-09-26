@@ -1,0 +1,178 @@
+:root {
+  color: #24303a;
+  background: #f4f1eb;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  width: min(100% - 2rem, 42rem);
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.app-header {
+  border-bottom: 2px solid #24303a;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.eyebrow {
+  color: #9b3d28;
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 10vw, 4rem);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
+.intro {
+  color: #53606a;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.expense-form {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.expense-form label {
+  font-weight: bold;
+}
+
+input,
+button {
+  border: 2px solid #24303a;
+  border-radius: 0.25rem;
+  font: inherit;
+  min-height: 2.8rem;
+  padding: 0.6rem 0.75rem;
+}
+
+input {
+  background: #fffdf8;
+  color: #24303a;
+  width: 100%;
+}
+
+button {
+  background: #24303a;
+  color: #fffdf8;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+button:hover,
+button:focus-visible {
+  background: #9b3d28;
+  color: #fffdf8;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: 3px solid #d89a35;
+  outline-offset: 2px;
+}
+
+.summary {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.summary p {
+  color: #53606a;
+  margin-bottom: 0;
+}
+
+.summary strong {
+  color: #24303a;
+}
+
+.expense-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.expense-item {
+  align-items: center;
+  background: #fffdf8;
+  border-left: 5px solid #d89a35;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  padding: 0.85rem 1rem;
+}
+
+.expense-description {
+  color: #24303a;
+  flex: 1;
+  line-height: 1.4;
+}
+
+.expense-amount {
+  color: #24303a;
+  font-weight: bold;
+}
+
+.delete-button {
+  background: transparent;
+  border-color: #9b3d28;
+  color: #9b3d28;
+  font-size: 0.9rem;
+  min-height: 0;
+  padding: 0.35rem 0.5rem;
+}
+
+.delete-button:hover,
+.delete-button:focus-visible {
+  background: #9b3d28;
+  color: #fffdf8;
+}
+
+.empty-message {
+  color: #53606a;
+}
+
+@media (max-width: 30rem) {
+  .app {
+    padding-top: 2rem;
+  }
+
+  .summary {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
